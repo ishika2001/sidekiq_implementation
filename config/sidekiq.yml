@@ -4,4 +4,15 @@
   - [low, 1]
 :concurrency: 2
 :timeout: 25
+# :schedule:
+#   my_worker:
+#     cron: "* * * * *"   # every minute
+#     class: "HardWorkerJob"
+#     args:
+#       - "Sidekiq-scheduler"
 
+# low_priority:
+#   cron: "* * * * *"
+#   class: "LowPriorityJob"
+#   args:
+#     - "Sidekiq-cron"

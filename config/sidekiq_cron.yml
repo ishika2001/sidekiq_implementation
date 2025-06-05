@@ -1,6 +1,5 @@
-hard_worker:
-  # cron: "0 * * * *"   # every hour
+low_priority:
   cron: "* * * * *"
-  class: "HardWorkerJob"
+  class: "LowPriorityJob"
   args:
-    - "Hello"
+    - "Sidekiq-cron"
